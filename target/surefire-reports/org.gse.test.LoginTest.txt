@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.gse.test.LoginTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 0.884 s <<< FAILURE! - in org.gse.test.LoginTest
+beforeMethod(org.gse.test.LoginTest)  Time elapsed: 0.585 s  <<< FAILURE!
+java.lang.ExceptionInInitializerError
+	at org.gse.test.LoginTest.beforeMethod(LoginTest.java:23)
+Caused by: net.sf.cglib.core.CodeGenerationException: java.lang.reflect.InaccessibleObjectException-->Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @15bfd87
+	at org.gse.test.LoginTest.beforeMethod(LoginTest.java:23)
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @15bfd87
+	at org.gse.test.LoginTest.beforeMethod(LoginTest.java:23)
+

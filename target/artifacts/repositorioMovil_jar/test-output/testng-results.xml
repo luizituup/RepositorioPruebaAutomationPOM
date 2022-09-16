@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-16T12:37:32 COT" name="Suite" finished-at="2022-09-16T12:37:54 COT" duration-ms="21399">
+    <groups>
+    </groups>
+    <test started-at="2022-09-16T12:37:32 COT" name="Test 1" finished-at="2022-09-16T12:37:43 COT" duration-ms="11037">
+      <class name="org.gse.test.ListNotifications">
+        <test-method is-config="true" signature="beforeTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.gse.test.ListNotifications@5b0abc94]" started-at="2022-09-16T12:37:32 COT" name="beforeTest" finished-at="2022-09-16T12:37:43 COT" duration-ms="10939" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8eaa6a43c6a9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:org.gse.test.ListNotifications@5b0abc94]" started-at="2022-09-16T12:37:43 COT" name="beforeClass" finished-at="2022-09-16T12:37:43 COT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:org.gse.test.ListNotifications@5b0abc94]" started-at="2022-09-16T12:37:43 COT" name="beforeMethod" finished-at="2022-09-16T12:37:43 COT" duration-ms="66" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.gse.test.ListNotifications.viewListNotificacions() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ExceptionInInitializerError">
+            <full-stacktrace>
+              <![CDATA[java.lang.ExceptionInInitializerError
+at io.appium.java_client.pagefactory.utils.ProxyFactory.getEnhancedProxy(ProxyFactory.java:53)
+at io.appium.java_client.pagefactory.utils.ProxyFactory.getEnhancedProxy(ProxyFactory.java:33)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.proxyForAnElement(AppiumFieldDecorator.java:216)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.access$0(AppiumFieldDecorator.java:214)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator$1.proxyForLocator(AppiumFieldDecorator.java:107)
+at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:154)
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+at org.gse.qa.BaseTest.<init>(BaseTest.java:31)
+at org.gse.pages.LoginPage.<init>(LoginPage.java:10)
+at org.gse.test.ListNotifications.beforeMethod(ListNotifications.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: net.sf.cglib.core.CodeGenerationException: java.lang.reflect.InaccessibleObjectException-->Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @77f99a05
+at net.sf.cglib.core.ReflectUtils.defineClass(ReflectUtils.java:464)
+at net.sf.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:339)
+at net.sf.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:96)
+at net.sf.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:94)
+at net.sf.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at net.sf.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61)
+at net.sf.cglib.core.internal.LoadingCache.get(LoadingCache.java:34)
+at net.sf.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:119)
+at net.sf.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:294)
+at net.sf.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221)
+at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:174)
+at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:153)
+at net.sf.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73)
+... 29 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @77f99a05
+at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:200)
+at java.base/java.lang.reflect.Method.setAccessible(Method.java:194)
+at net.sf.cglib.core.ReflectUtils$1.run(ReflectUtils.java:61)
+at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+at net.sf.cglib.core.ReflectUtils.<clinit>(ReflectUtils.java:52)
+at net.sf.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243)
+at net.sf.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25)
+at net.sf.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:332)
+... 41 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ExceptionInInitializerError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="viewListNotificacions()[pri:0, instance:org.gse.test.ListNotifications@5b0abc94]" started-at="2022-09-16T12:37:43 COT" name="viewListNotificacions" finished-at="2022-09-16T12:37:43 COT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.ExceptionInInitializerError">
+            <full-stacktrace>
+              <![CDATA[java.lang.ExceptionInInitializerError
+at io.appium.java_client.pagefactory.utils.ProxyFactory.getEnhancedProxy(ProxyFactory.java:53)
+at io.appium.java_client.pagefactory.utils.ProxyFactory.getEnhancedProxy(ProxyFactory.java:33)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.proxyForAnElement(AppiumFieldDecorator.java:216)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.access$0(AppiumFieldDecorator.java:214)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator$1.proxyForLocator(AppiumFieldDecorator.java:107)
+at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:154)
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+at org.gse.qa.BaseTest.<init>(BaseTest.java:31)
+at org.gse.pages.LoginPage.<init>(LoginPage.java:10)
+at org.gse.test.ListNotifications.beforeMethod(ListNotifications.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: net.sf.cglib.core.CodeGenerationException: java.lang.reflect.InaccessibleObjectException-->Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @77f99a05
+at net.sf.cglib.core.ReflectUtils.defineClass(ReflectUtils.java:464)
+at net.sf.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:339)
+at net.sf.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:96)
+at net.sf.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:94)
+at net.sf.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at net.sf.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61)
+at net.sf.cglib.core.internal.LoadingCache.get(LoadingCache.java:34)
+at net.sf.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:119)
+at net.sf.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:294)
+at net.sf.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221)
+at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:174)
+at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:153)
+at net.sf.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73)
+... 29 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @77f99a05
+at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:200)
+at java.base/java.lang.reflect.Method.setAccessible(Method.java:194)
+at net.sf.cglib.core.ReflectUtils$1.run(ReflectUtils.java:61)
+at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+at net.sf.cglib.core.ReflectUtils.<clinit>(ReflectUtils.java:52)
+at net.sf.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:243)
+at net.sf.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25)
+at net.sf.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:332)
+... 41 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ExceptionInInitializerError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewListNotificacions -->
+        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:org.gse.test.ListNotifications@5b0abc94]" started-at="2022-09-16T12:37:43 COT" name="afterMethod" finished-at="2022-09-16T12:37:43 COT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:org.gse.test.ListNotifications@5b0abc94]" started-at="2022-09-16T12:37:43 COT" name="afterClass" finished-at="2022-09-16T12:37:43 COT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:org.gse.test.ListNotifications@5b0abc94]" started-at="2022-09-16T12:37:43 COT" name="afterTest" finished-at="2022-09-16T12:37:43 COT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- org.gse.test.ListNotifications -->
+    </test> <!-- Test 1 -->
+    <test started-at="2022-09-16T12:37:43 COT" name="Test 2" finished-at="2022-09-16T12:37:54 COT" duration-ms="10297">
+      <class name="org.gse.test.ShareNotification">
+        <test-method is-config="true" signature="beforeTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:org.gse.test.ShareNotification@13acb0d1]" started-at="2022-09-16T12:37:43 COT" name="beforeTest" finished-at="2022-09-16T12:37:54 COT" duration-ms="10293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8eaa6a43c6a9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:org.gse.test.ShareNotification@13acb0d1]" started-at="2022-09-16T12:37:54 COT" name="beforeClass" finished-at="2022-09-16T12:37:54 COT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="viewNotificacions()[pri:0, instance:org.gse.test.ShareNotification@13acb0d1]" started-at="2022-09-16T12:37:54 COT" name="viewNotificacions" finished-at="2022-09-16T12:37:54 COT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[Could not initialize class net.sf.cglib.proxy.Enhancer]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class net.sf.cglib.proxy.Enhancer
+at io.appium.java_client.pagefactory.utils.ProxyFactory.getEnhancedProxy(ProxyFactory.java:53)
+at io.appium.java_client.pagefactory.utils.ProxyFactory.getEnhancedProxy(ProxyFactory.java:33)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.proxyForAnElement(AppiumFieldDecorator.java:216)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.access$0(AppiumFieldDecorator.java:214)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator$1.proxyForLocator(AppiumFieldDecorator.java:107)
+at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:154)
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+at org.gse.qa.BaseTest.<init>(BaseTest.java:31)
+at org.gse.pages.LoginPage.<init>(LoginPage.java:10)
+at org.gse.test.ShareNotification.beforeMethod(ShareNotification.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ExceptionInInitializerError: Exception net.sf.cglib.core.CodeGenerationException: java.lang.reflect.InaccessibleObjectException-->Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @77f99a05 [in thread "TestNG-test=Test 1-1"]
+at net.sf.cglib.core.ReflectUtils.defineClass(ReflectUtils.java:464)
+at net.sf.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:339)
+at net.sf.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:96)
+at net.sf.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:94)
+at net.sf.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at net.sf.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61)
+at net.sf.cglib.core.internal.LoadingCache.get(LoadingCache.java:34)
+at net.sf.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:119)
+at net.sf.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:294)
+at net.sf.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221)
+at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:174)
+at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:153)
+at net.sf.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73)
+at io.appium.java_client.pagefactory.utils.ProxyFactory.getEnhancedProxy(ProxyFactory.java:53)
+at io.appium.java_client.pagefactory.utils.ProxyFactory.getEnhancedProxy(ProxyFactory.java:33)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.proxyForAnElement(AppiumFieldDecorator.java:216)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.access$0(AppiumFieldDecorator.java:214)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator$1.proxyForLocator(AppiumFieldDecorator.java:107)
+at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:154)
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+at org.gse.qa.BaseTest.<init>(BaseTest.java:31)
+at org.gse.pages.LoginPage.<init>(LoginPage.java:10)
+at org.gse.test.ListNotifications.beforeMethod(ListNotifications.java:26)
+... 17 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewNotificacions -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:org.gse.test.ShareNotification@13acb0d1]" started-at="2022-09-16T12:37:54 COT" name="beforeMethod" finished-at="2022-09-16T12:37:54 COT" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void org.gse.test.ShareNotification.viewNotificacions() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[Could not initialize class net.sf.cglib.proxy.Enhancer]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class net.sf.cglib.proxy.Enhancer
+at io.appium.java_client.pagefactory.utils.ProxyFactory.getEnhancedProxy(ProxyFactory.java:53)
+at io.appium.java_client.pagefactory.utils.ProxyFactory.getEnhancedProxy(ProxyFactory.java:33)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.proxyForAnElement(AppiumFieldDecorator.java:216)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.access$0(AppiumFieldDecorator.java:214)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator$1.proxyForLocator(AppiumFieldDecorator.java:107)
+at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:154)
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+at org.gse.qa.BaseTest.<init>(BaseTest.java:31)
+at org.gse.pages.LoginPage.<init>(LoginPage.java:10)
+at org.gse.test.ShareNotification.beforeMethod(ShareNotification.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ExceptionInInitializerError: Exception net.sf.cglib.core.CodeGenerationException: java.lang.reflect.InaccessibleObjectException-->Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @77f99a05 [in thread "TestNG-test=Test 1-1"]
+at net.sf.cglib.core.ReflectUtils.defineClass(ReflectUtils.java:464)
+at net.sf.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:339)
+at net.sf.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:96)
+at net.sf.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:94)
+at net.sf.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at net.sf.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61)
+at net.sf.cglib.core.internal.LoadingCache.get(LoadingCache.java:34)
+at net.sf.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:119)
+at net.sf.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:294)
+at net.sf.cglib.core.KeyFactory$Generator.create(KeyFactory.java:221)
+at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:174)
+at net.sf.cglib.core.KeyFactory.create(KeyFactory.java:153)
+at net.sf.cglib.proxy.Enhancer.<clinit>(Enhancer.java:73)
+at io.appium.java_client.pagefactory.utils.ProxyFactory.getEnhancedProxy(ProxyFactory.java:53)
+at io.appium.java_client.pagefactory.utils.ProxyFactory.getEnhancedProxy(ProxyFactory.java:33)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.proxyForAnElement(AppiumFieldDecorator.java:216)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.access$0(AppiumFieldDecorator.java:214)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator$1.proxyForLocator(AppiumFieldDecorator.java:107)
+at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:62)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.decorate(AppiumFieldDecorator.java:154)
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:113)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:105)
+at org.gse.qa.BaseTest.<init>(BaseTest.java:31)
+at org.gse.pages.LoginPage.<init>(LoginPage.java:10)
+at org.gse.test.ListNotifications.beforeMethod(ListNotifications.java:26)
+... 17 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:org.gse.test.ShareNotification@13acb0d1]" started-at="2022-09-16T12:37:54 COT" name="afterMethod" finished-at="2022-09-16T12:37:54 COT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:org.gse.test.ShareNotification@13acb0d1]" started-at="2022-09-16T12:37:54 COT" name="afterClass" finished-at="2022-09-16T12:37:54 COT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:org.gse.test.ShareNotification@13acb0d1]" started-at="2022-09-16T12:37:54 COT" name="afterTest" finished-at="2022-09-16T12:37:54 COT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- org.gse.test.ShareNotification -->
+    </test> <!-- Test 2 -->
+  </suite> <!-- Suite -->
+</testng-results>
